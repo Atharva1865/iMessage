@@ -17,3 +17,7 @@ CORS:- Cross Origin Resource Sharing :- Browser Security Rule
 
 app.use(cors({ origin: FRONTEND_URL, credentials: true })) :- ithe credentials means allow the client to send the cookies or the auth headers with the request
 
+<SignUpButton mode='modal'/>   :- Here mode ="modal", allows the authentication page/block to appear as a popup
+
+Webhooks:- Automated Messages that are sent when something happens :- When a User is created in clerk, it is also automatically created in MongoDB ===> yalach setup krycha aahe    ====> For setting it up, we will need our Website hosted
+
