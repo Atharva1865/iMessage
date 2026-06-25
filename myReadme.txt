@@ -27,3 +27,6 @@ like .gitignore, we have .dockerignore for docker
 
 "build": "rm -rf dist && cp -R src dist"  ===> Remove the dist folder, if already present and then copy the src to the dist folder
 
+As we are deploying on render, after 15 minutes, it becomes inactive, so to keep it active, we are using a package ===> cron (cron.js in lib of backend)  ==> It sends a get request to health api, every 14 minutes hence keeping it active
+
+NODE_ENV=development   ===> Set this as production on render   ===> no need to add manually, its automatically setted by render
