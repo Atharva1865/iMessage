@@ -24,3 +24,6 @@ Webhooks:- Automated Messages that are sent when something happens :- When a Use
 Deploying both frontend and backend under same domain => MONOLITH DEPLOYMENT
 
 like .gitignore, we have .dockerignore for docker
+
+"build": "rm -rf dist && cp -R src dist"  ===> Remove the dist folder, if already present and then copy the src to the dist folder
+
